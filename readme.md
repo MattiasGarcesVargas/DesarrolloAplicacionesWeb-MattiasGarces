@@ -38,8 +38,6 @@
 
 <div align="center">
 
-![Essence Banner](https://images.unsplash.com/photo-1594035910387-fea47794261f?q=80\&w=1600\&auto=format\&fit=crop)
-
 <br>
 
 Diseño elegante, minimalista y moderno para la promoción y venta de perfumes en Guayaquil.
