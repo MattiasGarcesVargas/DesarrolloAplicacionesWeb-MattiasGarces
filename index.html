@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Essence — Maison de fragancias niche en Guayaquil</title>
+  <meta name="description" content="Essence: perfumes niche curados en Guayaquil. Lujo silencioso, entrega discreta y experiencia editorial para encontrar tu fragancia ideal." />
+  <meta name="author" content="Essence" />
+  <link rel="canonical" href="/" />
+  <meta property="og:title" content="Essence — Maison de fragancias niche en Guayaquil" />
+  <meta property="og:description" content="Perfumes niche curados en Guayaquil. Lujo silencioso, entrega discreta, experiencia editorial." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="site-header">
+  <div class="header-inner container">
+    <a href="#" class="brand">
+      <img src="assets/logo.png" alt="Logo Essence" />
+      <span>Essence</span>
+    </a>
+    <nav class="nav-desktop">
+      <a href="#catalogo" class="link-underline">Fragancias</a>
+      <a href="#destacado" class="link-underline">Editorial</a>
+      <a href="#valor" class="link-underline">Casa</a>
+      <a href="#footer" class="link-underline">Contacto</a>
+    </nav>
+    <button id="cart-btn" class="cart-btn" aria-label="Abrir carrito">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+      <span class="cart-label">Bolsa</span>
+      <span class="cart-count">(<span id="cart-count">0</span>)</span>
+    </button>
+    <button id="menu-btn" class="menu-btn" aria-label="Abrir menú">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+  <nav id="nav-mobile" class="nav-mobile">
+    <a href="#catalogo">Fragancias</a>
+    <a href="#destacado">Editorial</a>
+    <a href="#valor">Casa</a>
+    <a href="#footer">Contacto</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <img src="assets/hero.jpg" alt="Frasco de perfume Essence sobre seda beige" class="hero-bg" />
+  <div class="hero-grad-x"></div>
+  <div class="hero-grad-y"></div>
+  <div class="container hero-inner">
+    <div class="hero-content fade-up">
+      <p class="eyebrow soft">Essence — Guayaquil, 2026</p>
+      <h1>Descubre<br/>tu <em>esencia</em>.</h1>
+      <p class="hero-lead">Una colección curada de fragancias niche, traídas a Guayaquil para quienes entienden el lujo como un gesto silencioso.</p>
+      <div class="hero-actions">
+        <a href="#catalogo" class="btn-primary">Explorar fragancias <span class="arrow">→</span></a>
+        <a href="#destacado" class="eyebrow link-underline soft">Editorial</a>
+      </div>
+    </div>
+  </div>
+  <div class="hero-corner left"><span class="rule"></span>Volumen 01</div>
+  <div class="hero-corner right">Scroll ↓</div>
+</section>
+
+<!-- CATALOG -->
+<section id="catalogo" class="catalog section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow soft">La Colección</p>
+        <h2>Fragancias <em>selectas</em></h2>
+      </div>
+      <p class="section-head-lead">Cada perfume es elegido a mano por su carácter, su rareza y la historia que cuenta sobre quien lo lleva.</p>
+    </div>
+    <div class="product-grid" id="product-grid"></div>
+  </div>
+</section>
+
+<!-- VALUES -->
+<section id="valor" class="values section">
+  <div class="container values-grid">
+    <div class="value reveal">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M2 12h20"/></svg>
+      <h3>Curaduría niche</h3>
+      <p>Cada frasco es seleccionado por su rareza, su firma olfativa y la casa que lo produce.</p>
+    </div>
+    <div class="value reveal">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="12" rx="1"/><path d="M3 12h18M8 8V5a4 4 0 0 1 8 0v3"/></svg>
+      <h3>Entrega discreta</h3>
+      <p>Empaque editorial y envío silencioso a domicilio en Guayaquil y Samborondón.</p>
+    </div>
+    <div class="value reveal">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z"/><path d="M12 8v4l3 2"/></svg>
+      <h3>Asesoría olfativa</h3>
+      <p>Conversación personalizada para descubrir tu firma —en privado, sin prisa.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED -->
+<section id="destacado" class="featured">
+  <div class="featured-img"><img src="assets/sospirovibrato.webp" alt="Edición destacada Sospiro Vibratto" /></div>
+  <div class="featured-body">
+    <div>
+      <p class="eyebrow soft">Edición destacada — N° 04</p>
+      <h2>Sospiro<br/><em>Vibratto</em></h2>
+      <div class="hairline"></div>
+      <p class="soft">Frescura cítrica y aromática que se transforma en un fondo profundo de incienso y sándalo. Para quienes prefieren ser recordados sin levantar la voz.</p>
+      <dl class="featured-meta">
+        <div><dt>Familia</dt><dd>Aromático</dd></div>
+        <div><dt>Volumen</dt><dd>100 ml</dd></div>
+        <div><dt>Precio</dt><dd class="price">$135</dd></div>
+      </dl>
+      <button class="btn-primary" data-add-featured>Comprar ahora <span class="arrow">→</span></button>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials section">
+  <div class="container testimonials-grid">
+    <blockquote class="reveal">
+      <p>"Encontré aquí un aroma que no sabía que estaba buscando. Pura conversación olfativa."</p>
+      <cite>— Valeria M., Samborondón</cite>
+    </blockquote>
+    <blockquote class="reveal">
+      <p>"Lujo silencioso. El empaque, la atención, el frasco. Todo respira intención."</p>
+      <cite>— Andrés R., Guayaquil</cite>
+    </blockquote>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="brand">
+          <span>Essence</span>
+          <img src="assets/logo.png" alt="Logo Essence" />
+        </a>
+        <p>Maison de fragancias niche en Guayaquil. Selección curada, entrega discreta, conversación olfativa.</p>
+      </div>
+      <div>
+        <p class="eyebrow muted">Casa</p>
+        <ul>
+          <li><a href="#catalogo" class="link-underline">Fragancias</a></li>
+          <li><a href="#destacado" class="link-underline">Editorial</a></li>
+          <li><a href="#valor" class="link-underline">Filosofía</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="eyebrow muted">Contacto</p>
+        <ul class="contact">
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg> @essence.gye</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg> hola@essence.ec</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg> Guayaquil · Samborondón</li>
+        </ul>
+      </div>
+    </div>
+    <div class="hairline footer-hairline"></div>
+    <div class="footer-bottom eyebrow muted">
+      <p>© 2026 Maison Essence. Hecho en Guayaquil.</p>
+      <p>Lujo silencioso desde el primer aliento.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- CART DRAWER -->
+<div id="cart-overlay" class="cart-overlay"></div>
+<aside id="cart-drawer" class="cart-drawer" aria-hidden="true">
+  <div class="cart-head">
+    <p class="eyebrow">Tu bolsa</p>
+    <button id="cart-close" aria-label="Cerrar">×</button>
+  </div>
+  <div id="cart-items" class="cart-items"></div>
+  <div class="cart-foot">
+    <div class="cart-subtotal"><span class="eyebrow">Subtotal</span><span id="cart-total" class="price">$0</span></div>
+    <button class="btn-primary block">Finalizar compra <span class="arrow">→</span></button>
+  </div>
+</aside>
+
+<script src="script.js"></script>
+</body>
+</html>
