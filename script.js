@@ -1,5 +1,6 @@
 // ===== Products =====
 const products = [
+  { id:'sospiro-vibratto', name:'Sospiro Vibratto', tagline:'Cítricos · Jazmín · Limon', category:'Unisex', size:'100 ml', price:300, image:'assets/sospirovibrato.webp' },
   { id:'jpg-le-beau', name:'Jean Paul Gaultier Le Beau', tagline:'Coco · Tonka · Madera de guayaco', category:'Hombre', size:'125 ml', price:110, image:'assets/perfume-6.avif' },
   { id:'azzaro-most-wanted', name:'Azzaro The Most Wanted', tagline:'Cardamomo · Toffee · Ámbar oscuro', category:'Hombre', size:'100 ml', price:95, image:'assets/lazaro.png' },
   { id:'lv-imagination', name:'Louis Vuitton Imagination', tagline:'Bergamota · Té negro · Cedro', category:'Unisex', size:'100 ml', price:280, image:'assets/perfume-7.webp' },
@@ -10,9 +11,11 @@ const products = [
   { id:'carolina-herrera-cool-girl', name:'Carolina Herrera Cool Girl', tagline:'Cítricos · Rosa · Lavanda', category:'Mujer', size:'80 ml', price:100, image:'assets/perfume-11.webp' }
 ];
 
+const catalogProducts = products.filter(p => p.id !== 'sospiro-vibratto');
+
 // ===== Render catalog =====
 const grid = document.getElementById('product-grid');
-grid.innerHTML = products.map(p => `
+grid.innerHTML = catalogProducts.map(p => `
   <article class="card reveal" data-id="${p.id}">
     <div class="card-img">
       <img src="${p.image}" alt="${p.name}" loading="lazy" />
@@ -87,7 +90,7 @@ document.addEventListener('click', (e) => {
   const dec = e.target.closest('[data-dec]'); if(dec){ const it = cart.find(x => x.id === dec.dataset.dec); if(it) setQty(it.id, it.qty-1); return; }
   const rm = e.target.closest('[data-rm]'); if(rm){ e.preventDefault(); remove(rm.dataset.rm); return; }
 });
-document.querySelector('[data-add-featured]').addEventListener('click', () => add('bleu-de-chanel'));
+document.querySelector('[data-add-featured]').addEventListener('click', () => add('sospiro-vibratto'));
 
 // ===== Header scroll =====
 const header = document.getElementById('site-header');
