@@ -44,6 +44,10 @@ Diseño elegante, minimalista y moderno para la promoción y venta de perfumes e
 
 <br>
 
+<img src="assets/PaginaWebScreenShot.png"/>
+
+<br>
+
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
 <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
@@ -115,22 +119,6 @@ Desarrollar una tienda web moderna y responsive que permita:
 <br>
 
 # 🎨 Diseño e Inspiración
-
-<div align="center">
-
-| Hero Section | Catálogo |
-|<br>
-
-<hr>
-
-<br>|<br>
-
-<hr>
-
-<br>|
-| ![](https://images.unsplash.com/photo-1541643600914-78b084683601?q=80\&w=1200\&auto=format\&fit=crop) | ![](https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?q=80\&w=1200\&auto=format\&fit=crop) |
-
-</div>
 
 La identidad visual de **Essence** está inspirada en marcas premium y utiliza una paleta elegante y sofisticada basada en:
 
