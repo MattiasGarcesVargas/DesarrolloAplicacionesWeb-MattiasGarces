@@ -117,7 +117,10 @@
         <div><dt>Volumen</dt><dd>100 ml</dd></div>
         <div><dt>Precio</dt><dd class="price">$300</dd></div>
       </dl>
-      <button class="btn-primary" data-add-featured>Comprar ahora <span class="arrow">→</span></button>
+      <div class="featured-actions">
+        <button class="btn-primary" data-add-featured>Comprar ahora <span class="arrow">&rarr;</span></button>
+        <button class="btn-secondary" type="button" data-video-open>Ver unboxing</button>
+      </div>
     </div>
   </div>
 </section>
@@ -135,6 +138,65 @@
     </blockquote>
   </div>
 </section>
+
+<!-- COMPARISON -->
+<section class="comparison-section section">
+  <div class="container">
+    <div class="section-head comparison-head">
+      <div>
+        <p class="eyebrow soft">Comparación</p>
+        <h2>Un lujo que se <em>distingue</em></h2>
+      </div>
+      <p class="section-head-lead">Una lectura clara de lo que hace distinta la experiencia de Essence frente a una perfumería convencional.</p>
+    </div>
+    <div class="comparison-wrap reveal">
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th scope="col">Aspecto</th>
+            <th scope="col">Essence</th>
+            <th scope="col">Otras tiendas</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Selección</th>
+            <td>Fragancias niche elegidas por caràcter, rareza y la historia de cada casa.</td>
+            <td>Catálogos amplios con un enfoque más masivo y comercial.</td>
+          </tr>
+          <tr>
+            <th scope="row">Asesorí­a</th>
+            <td>RecomendaciÃ³n personal y pausada para encontrar una firma propia.</td>
+            <td>Compra más rápida, con menor acompañamiento en la elección.</td>
+          </tr>
+          <tr>
+            <th scope="row">Entrega</th>
+            <td>Presentación editorial y despacho discreto dentro de Guayaquil y Samborondón.</td>
+            <td>Empaque estándar y una experiencia de entrega funcional.</td>
+          </tr>
+          <tr>
+            <th scope="row">Identidad</th>
+            <td>Perfumes pensados para quienes quieren ser recordados sin repetir lo de siempre.</td>
+            <td>Opciones guiadas por tendencias, rotación y alta disponibilidad.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO MODAL -->
+<div class="video-modal" id="video-modal" aria-hidden="true">
+  <div class="video-modal-backdrop" data-video-close></div>
+  <div class="video-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="video-modal-title">
+    <button class="video-modal-close" type="button" aria-label="Cerrar video" data-video-close>X</button>
+    <p id="video-modal-title" class="eyebrow soft">Sospiro Vibratto</p>
+    <video id="featured-video" controls playsinline preload="metadata">
+      <source src="assets/Sospiro Vibrato Video.mp4" type="video/mp4" />
+      Tu navegador no soporta video HTML5.
+    </video>
+  </div>
+</div>
 
 </main>
 <!-- FOOTER -->
@@ -190,3 +252,4 @@
 <script src="script.js"></script>
 </body>
 </html>
+

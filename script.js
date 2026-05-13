@@ -92,6 +92,35 @@ document.addEventListener('click', (e) => {
 });
 document.querySelector('[data-add-featured]').addEventListener('click', () => add('sospiro-vibratto'));
 
+// ===== Featured video modal =====
+const videoModal = document.getElementById('video-modal');
+const featuredVideo = document.getElementById('featured-video');
+const videoOpenBtn = document.querySelector('[data-video-open]');
+
+function openVideoModal(){
+  if(!videoModal || !featuredVideo) return;
+  videoModal.classList.add('open');
+  videoModal.setAttribute('aria-hidden', 'false');
+  document.body.classList.add('modal-open');
+  const playAttempt = featuredVideo.play();
+  if(playAttempt && typeof playAttempt.catch === 'function') playAttempt.catch(() => {});
+}
+
+function closeVideoModal(){
+  if(!videoModal || !featuredVideo) return;
+  videoModal.classList.remove('open');
+  videoModal.setAttribute('aria-hidden', 'true');
+  document.body.classList.remove('modal-open');
+  featuredVideo.pause();
+  featuredVideo.currentTime = 0;
+}
+
+if(videoOpenBtn) videoOpenBtn.addEventListener('click', openVideoModal);
+document.querySelectorAll('[data-video-close]').forEach(el => el.addEventListener('click', closeVideoModal));
+document.addEventListener('keydown', (e) => {
+  if(e.key === 'Escape' && videoModal?.classList.contains('open')) closeVideoModal();
+});
+
 // ===== Header scroll =====
 const header = document.getElementById('site-header');
 const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 24);
